@@ -42,7 +42,7 @@ export const Items = ({ hearts, points, hasActiveSubscription }: Props) => {
 
   return (
     <ul className="w-full">
-      <div className="flex items-center w-full p-4 gap-x-4 border-t-2">
+      <li className="flex items-center w-full p-4 gap-x-4 border-t-2">
         <Image src="/icons/heart.svg" alt="Heart" height={60} width={60} />
 
         <div className="flex-1">
@@ -69,9 +69,9 @@ export const Items = ({ hearts, points, hasActiveSubscription }: Props) => {
             </div>
           )}
         </Button>
-      </div>
+      </li>
 
-      <div className="flex items-center w-full p-4 pt-8 gap-x-4 border-t-2">
+      <li className="flex items-center w-full p-4 pt-8 gap-x-4 border-t-2">
         <Image
           src="/icons/unlimited.svg"
           alt="Unlimited"
@@ -88,7 +88,7 @@ export const Items = ({ hearts, points, hasActiveSubscription }: Props) => {
         <Button disabled={pending} onClick={onUpgrade}>
           {hasActiveSubscription ? "settings" : "upgrade"}
         </Button>
-      </div>
+      </li>
     </ul>
   );
 };
