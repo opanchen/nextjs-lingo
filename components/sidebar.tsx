@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ClerkLoading, ClerkLoaded, UserButton } from "@clerk/nextjs";
 import { Loader } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
+import { Logo } from "@/components/logo";
 import { SidebarItem } from "@/components/sidebar-item";
 
 type Props = {
@@ -20,12 +20,7 @@ export const Sidebar = ({ className }: Props) => {
       )}
     >
       <Link href="/learn">
-        <div className="pt-8 pl-4 pb-7 flex items-center gap-x-3">
-          <Image src="/icons/mascot.svg" alt="Mascot" width={40} height={40} />
-          <span className="text-2xl font-extrabold text-green-600 tracking-wide">
-            Lingo
-          </span>
-        </div>
+        <Logo />
       </Link>
 
       <div className="flex flex-col gap-y-2 flex-1">
