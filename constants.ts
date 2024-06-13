@@ -22,3 +22,26 @@ export const quests = [
     value: 1000,
   },
 ];
+
+export const navLinks = [
+  {
+    href: "/learn",
+    label: "Learn",
+    iconSrc: "/icons/learn.svg",
+  },
+  {
+    href: "/leaderboard",
+    label: "Leaderboard",
+    iconSrc: "/icons/leaderboard.svg",
+  },
+  {
+    href: "/quests",
+    label: "Quests",
+    iconSrc: "/icons/quests.svg",
+  },
+  {
+    href: "/shop",
+    label: "Shop",
+    iconSrc: "/icons/shop.svg",
+  },
+];

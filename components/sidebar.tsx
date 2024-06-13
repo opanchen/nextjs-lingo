@@ -4,6 +4,8 @@ import { Loader } from "lucide-react";
 
 import { cn } from "@/lib/utils";
 
+import { navLinks } from "@/constants";
+
 import { Logo } from "@/components/logo";
 import { SidebarItem } from "@/components/sidebar-item";
 
@@ -23,23 +25,13 @@ export const Sidebar = ({ className }: Props) => {
         <Logo />
       </Link>
 
-      <div className="flex flex-col gap-y-2 flex-1">
-        <SidebarItem href="/learn" label="Learn" iconSrc="/icons/learn.svg" />
-
-        <SidebarItem
-          href="/leaderboard"
-          label="Leaderboard"
-          iconSrc="/icons/leaderboard.svg"
-        />
-
-        <SidebarItem
-          href="/quests"
-          label="Quests"
-          iconSrc="/icons/quests.svg"
-        />
-
-        <SidebarItem href="/shop" label="Shop" iconSrc="/icons/shop.svg" />
-      </div>
+      <ul className="flex flex-col gap-y-2 flex-1">
+        {navLinks.map(({ href, label, iconSrc }, idx) => (
+          <li key={idx} className="w-full flex flex-col">
+            <SidebarItem href={href} label={label} iconSrc={iconSrc} />
+          </li>
+        ))}
+      </ul>
 
       <div className="p-4">
         <ClerkLoading>
