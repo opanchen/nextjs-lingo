@@ -13,8 +13,9 @@ import { StickyWrapper } from "@/components/sticky-wrapper";
 import { UserProgress } from "@/components/user-progress";
 import { Promo } from "@/components/promo";
 import { Quests } from "@/components/quests";
-import { Header } from "./header";
-import { Unit } from "./unit";
+
+import { Header } from "./_components/header";
+import { Unit } from "./_components/unit";
 
 const LearnPage = async () => {
   const userProgressPromise = getUserProgress();

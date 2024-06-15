@@ -8,7 +8,8 @@ import { UserProgress } from "@/components/user-progress";
 import { FeedWrapper } from "@/components/feed-wrapper";
 import { Promo } from "@/components/promo";
 import { Quests } from "@/components/quests";
-import { Items } from "./items";
+
+import { Items } from "./_components/items";
 
 const ShopPage = async () => {
   const userProgressPromise = getUserProgress();

@@ -1,5 +1,5 @@
-import { Header } from "./header";
-import { Footer } from "./footer";
+import { Header } from "./_components/header";
+import { Footer } from "./_components/footer";
 
 const MarketingLayout = ({ children }: { children: React.ReactNode }) => {
   return (
