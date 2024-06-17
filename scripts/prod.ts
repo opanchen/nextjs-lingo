@@ -120,7 +120,7 @@ const main = async () => {
               correct: true,
               text: "el hombre",
               imageSrc: "/icons/man.svg",
-              audioSrc: "/audio/audio/es_man.mp3",
+              audioSrc: "/audio/es_man.mp3",
             },
             {
               correct: false,
@@ -825,9 +825,21 @@ const main = async () => {
           type: "ASSIST",
           question: '"the zombie"',
           options: [
-            { correct: false, text: "la donna", audioSrc: "/it_woman.mp3" },
-            { correct: true, text: "lo zombie", audioSrc: "/it_zombie.mp3" },
-            { correct: false, text: "il ragazzo", audioSrc: "/it_boy.mp3" },
+            {
+              correct: false,
+              text: "la donna",
+              audioSrc: "/audio/it_woman.mp3",
+            },
+            {
+              correct: true,
+              text: "lo zombie",
+              audioSrc: "/audio/it_zombie.mp3",
+            },
+            {
+              correct: false,
+              text: "il ragazzo",
+              audioSrc: "/audio/it_boy.mp3",
+            },
           ],
         },
       ]

@@ -146,10 +146,14 @@ export const Quiz = ({
     }
   };
 
-  const title =
-    challenge.type === "ASSIST"
-      ? "Select the correct meaning"
-      : challenge.question;
+  let title = "";
+
+  if (challenge) {
+    title =
+      challenge.type === "ASSIST"
+        ? "Select the correct meaning"
+        : challenge.question;
+  }
 
   return challenge ? (
     <>
