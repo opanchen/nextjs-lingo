@@ -20,6 +20,19 @@ export const metadata: Metadata = {
   alternates: {
     canonical: process.env.NEXT_PUBLIC_APP_URL as string,
   },
+  twitter: {
+    title: "Lingo",
+    card: "summary_large_image",
+    description: "Learn, practice and master new languages with Lingo.",
+    images: [
+      {
+        url: "/meta/ogp-image.jpg",
+        width: 2048,
+        height: 1280,
+        alt: "Lingo app",
+      },
+    ],
+  },
   openGraph: {
     title: "Lingo",
     description: "Learn, practice and master new languages with Lingo.",
